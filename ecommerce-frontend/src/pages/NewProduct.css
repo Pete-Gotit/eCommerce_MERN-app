@@ -1,0 +1,39 @@
+.images-preview-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fil, minmax(min(100px, 100%), 1fr));
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.image-preview {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-preview i,
+.remove-img-spinner {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.image-preview i:hover {
+    color: orange;
+}
+
+.new-product_image--container {
+    background-image: url(https://images.unsplash.com/photo-1688089554116-072873b4c148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNDE2NDF8MHwxfHRvcGljfHx0b3dKWkZza3BHZ3x8fHx8Mnx8MTY4OTY1MjgwNXw&ixlib=rb-4.0.3&q=80&w=200);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
